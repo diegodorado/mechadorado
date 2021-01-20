@@ -199,23 +199,58 @@
   text-align: center;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
-  padding: 2em 3em;
+  padding: 1.5em 2.5em;
   border-radius: 10px;
 }
 .data h1 {
   font-family: "Caveat", cursive;
-  font-size: 4em;
+  font-size: 1.5em;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 0.5em;
   padding: 0;
-  margin-bottom: 0.4em;
 }
-.data a {
-  display: inline-block;
-  margin: 0 2em;
+@media (min-width: 768px) {
+  .data h1 {
+    font-size: 3em;
+  }
 }
-.data a img {
-  width: 3em;
+@media (min-width: 1280px) {
+  .data h1 {
+    font-size: 4em;
+  }
+}
+.data p {
+  font-family: "Caveat", cursive;
+  font-size: 1.25em;
+  margin: 0 0 1em;
+}
+@media (min-width: 768px) {
+  .data p {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1280px) {
+  .data p {
+    font-size: 2em;
+  }
+}
+.data nav {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .data nav {
+    gap: 2em;
+  }
+}
+.data nav a {
+  flex: 1 0 0;
+  max-width: 3em;
+  transition: transform 0.2s linear;
+}
+.data nav a:hover {
+  transform: scale(1.1);
 }
 
 html, body {
