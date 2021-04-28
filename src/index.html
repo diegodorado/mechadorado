@@ -6,12 +6,110 @@
 <title>Mecha Cerámica</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./style.scss">
 </head>
 
 <body>
-  <div class="data">
+  <header>
     <h1>Mecha Cerámica</h1>
+    <p>Andamos dejando huella, a cada paso.</p>
+  </header>
+  <section class="slideshowWrapper">
+    <div class="slideshow">
+      <div class="slideshow-image" style="background-image: url('./images/9.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('./images/10.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('./images/11.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('./images/12.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('./images/13.jpg')"></div>
+
+      <div class="slideshow-image" style="background-image: url('./images/2.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('./images/3.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('./images/4.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('./images/5.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('./images/6.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('./images/7.jpg')"></div>
+      <div class="slideshow-image" style="background-image: url('./images/8.jpg')"></div>
+      
+    </div>
+  </section>
+  <section class="scrollDown">
+    <a href="#" id="scroll"><span></span></a>
+  </section>
+
+
+
+
+<div id="poema">
+<p>
+Andamos dejando huella, a cada paso.
+<br/>
+<br/>
+Aun cuando creemos estar caminando en puntas de pie.
+<br/>
+<br/>
+Vamos impregnándolo todo, imprimiéndonos por doquier, permaneciendo, inmortalizándonos.
+<br/>
+<br/>
+<br/>
+<br/>
+Cuánto impacta mi rastro, que aun pretendiendo ser imperceptible y sutil, imprime su marca con total firmeza?
+<br/>
+<br/>
+Dejamos rastro. No somos islas,
+<br/>
+<br/>
+¿Somos naturaleza? ¿Seremos parte de un todo?
+<br/>
+<br/>
+¿Y la suma de las partes? ¿Seremos más que eso?
+<br/>
+<br/>
+<br/>
+<br/>
+Pero… islas no somos.
+<br/>
+<br/>
+¿Con quién me conecto cuando me aíslo?
+<br/>
+<br/>
+¿De dónde vengo? ¿A dónde voy?
+<br/>
+<br/>
+¿Con quien estoy mientras permanezco?
+<br/>
+<br/>
+¿Me conservo?
+<br/>
+<br/>
+No, no somos islas
+<br/>
+<br/>
+<br/>
+<br/>
+Y así vamos
+<br/>
+<br/>
+Dejando impronta
+<br/>
+<br/>
+¿Somos manada? ¿Somos jauría?
+<br/>
+<br/>
+Todo aquello que me atraviesa permanece inmortalizado cual fósil en un mineral
+<br/>
+<br/>
+Todo lo que pasa a través de mi cuerpo, deja una huella
+<br/>
+<br/>
+Mineralizada gracias al fuego queda la impronta orgánica.
+<br/>
+<br/>
+No somos islas.
+</p>
+</div>
+
+  <footer>
     <nav>
       <a href="https://www.facebook.com/mechi.dorado.1">
         <img src="./icons/facebook.svg"/>
@@ -20,15 +118,12 @@
         <img src="./icons/instagram.svg"/>
       </a>
     </nav>
-  </div>
-<div class="slideshow">
-  <div class="slideshow-image" style="background-image: url('./images/2.jpg')"></div>
-  <div class="slideshow-image" style="background-image: url('./images/3.jpg')"></div>
-  <div class="slideshow-image" style="background-image: url('./images/4.jpg')"></div>
-  <div class="slideshow-image" style="background-image: url('./images/5.jpg')"></div>
-  <div class="slideshow-image" style="background-image: url('./images/6.jpg')"></div>
-  <div class="slideshow-image" style="background-image: url('./images/7.jpg')"></div>
-  <div class="slideshow-image" style="background-image: url('./images/8.jpg')"></div>
-</div>
+  </footer>
+  <script>
+    document.getElementById('scroll').addEventListener('click', (ev) => {
+      ev.preventDefault()
+      document.getElementById('poema').scrollIntoView()
+    })
+  </script>
 </body>
 </html>
