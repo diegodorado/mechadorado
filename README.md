@@ -1,3 +1,0 @@
-# Mecha Cerámica
-
-Landing site.
